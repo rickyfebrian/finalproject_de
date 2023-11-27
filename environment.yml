@@ -1,0 +1,17 @@
+channels:
+  - conda-forge
+  - default
+
+dependencies:
+  - pip
+  - ipykernel
+
+  - airflow
+  - apache-airflow-providers-postgres
+  - apache-airflow-providers-mysql
+  - sqlalchemy
+  - psycopg
+  - psycopg2
+  - mysqlclient
+
+  - pandas

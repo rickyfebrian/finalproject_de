@@ -1,0 +1,23 @@
+[2023-11-26 17:59:25,074] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_dim_province manual__2023-11-26T17:57:07.249623+00:00 [queued]>
+[2023-11-26 17:59:25,084] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_dim_province manual__2023-11-26T17:57:07.249623+00:00 [queued]>
+[2023-11-26 17:59:25,084] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 17:59:25,084] {taskinstance.py:1357} INFO - Starting attempt 3 of 8
+[2023-11-26 17:59:25,084] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 17:59:25,101] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_dim_province> on 2023-11-26 17:57:07.249623+00:00
+[2023-11-26 17:59:25,105] {standard_task_runner.py:52} INFO - Started process 816 to run task
+[2023-11-26 17:59:25,107] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'create_dim_province', 'manual__2023-11-26T17:57:07.249623+00:00', '--job-id', '140', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpi055so8s', '--error-file', '/tmp/tmpdif9nexa']
+[2023-11-26 17:59:25,108] {standard_task_runner.py:80} INFO - Job 140: Subtask create_dim_province
+[2023-11-26 17:59:25,156] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.create_dim_province manual__2023-11-26T17:57:07.249623+00:00 [running]> on host 79a606f4be36
+[2023-11-26 17:59:25,224] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_dim_province
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-26T17:57:07.249623+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-26T17:57:07.249623+00:00
+[2023-11-26 17:59:25,249] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 17:59:25,262] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=create_dim_province, execution_date=20231126T175707, start_date=20231126T175925, end_date=20231126T175925
+[2023-11-26 17:59:25,283] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 17:59:25,338] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

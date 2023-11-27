@@ -1,0 +1,610 @@
+[2023-11-26 14:26:17,729] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 14:26:17,755] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 14:26:17,756] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 14:26:17,756] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-11-26 14:26:17,756] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 14:26:17,783] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): ingest_staging_db> on 2023-11-20 00:00:00+00:00
+[2023-11-26 14:26:17,789] {standard_task_runner.py:52} INFO - Started process 681 to run task
+[2023-11-26 14:26:17,793] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'ingest_staging_db', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpkh6f1271', '--error-file', '/tmp/tmpdpip74mj']
+[2023-11-26 14:26:17,794] {standard_task_runner.py:80} INFO - Job 20: Subtask ingest_staging_db
+[2023-11-26 14:26:17,865] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [running]> on host f384f2afcc4f
+[2023-11-26 14:26:17,934] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=ingest_staging_db
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-26 14:26:19,125] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 14:26:19,138] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=ingest_staging_db, execution_date=20231120T000000, start_date=20231126T142617, end_date=20231126T142619
+[2023-11-26 14:26:19,170] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 14:26:19,200] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 15:39:36,887] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 15:39:36,942] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 15:39:36,942] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 15:39:36,942] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-11-26 15:39:36,943] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 15:39:37,009] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): ingest_staging_db> on 2023-11-20 00:00:00+00:00
+[2023-11-26 15:39:37,027] {standard_task_runner.py:52} INFO - Started process 2535 to run task
+[2023-11-26 15:39:37,043] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'ingest_staging_db', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpa2o4jklr', '--error-file', '/tmp/tmpng9tdpqf']
+[2023-11-26 15:39:37,044] {standard_task_runner.py:80} INFO - Job 48: Subtask ingest_staging_db
+[2023-11-26 15:39:37,203] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [running]> on host f384f2afcc4f
+[2023-11-26 15:39:37,477] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=ingest_staging_db
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-26 15:39:57,809] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1706, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.OperationalError: (1050, "Table 'covid_jabar' already exists")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_data.py", line 36, in ingest_data_staging
+    df.to_sql("covid_jabar", staging_db_constring, if_exists="replace", index=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 2882, in to_sql
+    method=method,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1650, in prep_table
+    table.create()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 867, in create
+    self._execute_create()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 853, in _execute_create
+    self.table.create()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 943, in create
+    bind._run_ddl_visitor(ddl.SchemaGenerator, self, checkfirst=checkfirst)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3008, in _run_ddl_visitor
+    conn._run_ddl_visitor(visitorcallable, element, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2016, in _run_ddl_visitor
+    visitorcallable(self.dialect, self, **kwargs).traverse_single(element)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/visitors.py", line 483, in traverse_single
+    return meth(obj, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/ddl.py", line 895, in visit_table
+    include_foreign_key_constraints,  # noqa
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1200, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/ddl.py", line 78, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1296, in _execute_ddl
+    compiled,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1749, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1930, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1706, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (MySQLdb._exceptions.OperationalError) (1050, "Table 'covid_jabar' already exists")
+[SQL: 
+CREATE TABLE covid_jabar (
+	`CLOSECONTACT` BIGINT, 
+	`CONFIRMATION` BIGINT, 
+	`PROBABLE` BIGINT, 
+	`SUSPECT` BIGINT, 
+	closecontact_dikarantina BIGINT, 
+	closecontact_discarded BIGINT, 
+	closecontact_meninggal BIGINT, 
+	confirmation_meninggal BIGINT, 
+	confirmation_sembuh BIGINT, 
+	kode_kab TEXT, 
+	kode_prov TEXT, 
+	nama_kab TEXT, 
+	nama_prov TEXT, 
+	probable_diisolasi BIGINT, 
+	probable_discarded BIGINT, 
+	probable_meninggal BIGINT, 
+	suspect_diisolasi BIGINT, 
+	suspect_discarded BIGINT, 
+	suspect_meninggal BIGINT, 
+	tanggal TEXT
+)
+
+]
+(Background on this error at: http://sqlalche.me/e/14/e3q8)
+[2023-11-26 15:39:57,830] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=data_covid_etl, task_id=ingest_staging_db, execution_date=20231120T000000, start_date=20231126T153936, end_date=20231126T153957
+[2023-11-26 15:39:57,847] {standard_task_runner.py:97} ERROR - Failed to execute job 48 for task ingest_staging_db ((MySQLdb._exceptions.OperationalError) (1050, "Table 'covid_jabar' already exists")
+[SQL: 
+CREATE TABLE covid_jabar (
+	`CLOSECONTACT` BIGINT, 
+	`CONFIRMATION` BIGINT, 
+	`PROBABLE` BIGINT, 
+	`SUSPECT` BIGINT, 
+	closecontact_dikarantina BIGINT, 
+	closecontact_discarded BIGINT, 
+	closecontact_meninggal BIGINT, 
+	confirmation_meninggal BIGINT, 
+	confirmation_sembuh BIGINT, 
+	kode_kab TEXT, 
+	kode_prov TEXT, 
+	nama_kab TEXT, 
+	nama_prov TEXT, 
+	probable_diisolasi BIGINT, 
+	probable_discarded BIGINT, 
+	probable_meninggal BIGINT, 
+	suspect_diisolasi BIGINT, 
+	suspect_discarded BIGINT, 
+	suspect_meninggal BIGINT, 
+	tanggal TEXT
+)
+
+]
+(Background on this error at: http://sqlalche.me/e/14/e3q8); 2535)
+[2023-11-26 15:39:57,893] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-11-26 15:39:57,944] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 17:57:11,804] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 17:57:11,828] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 17:57:11,829] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 17:57:11,829] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-11-26 17:57:11,829] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 17:57:11,876] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): ingest_staging_db> on 2023-11-20 00:00:00+00:00
+[2023-11-26 17:57:11,890] {standard_task_runner.py:52} INFO - Started process 694 to run task
+[2023-11-26 17:57:11,903] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'ingest_staging_db', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '103', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpcao2xuic', '--error-file', '/tmp/tmpyst_dke7']
+[2023-11-26 17:57:11,907] {standard_task_runner.py:80} INFO - Job 103: Subtask ingest_staging_db
+[2023-11-26 17:57:12,017] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 17:57:12,328] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=ingest_staging_db
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-26 17:57:12,992] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 17:57:13,040] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=ingest_staging_db, execution_date=20231120T000000, start_date=20231126T175711, end_date=20231126T175713
+[2023-11-26 17:57:13,086] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 17:57:13,159] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:00:53,104] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 18:00:53,114] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 18:00:53,114] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:00:53,114] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-11-26 18:00:53,114] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:00:53,127] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): ingest_staging_db> on 2023-11-20 00:00:00+00:00
+[2023-11-26 18:00:53,132] {standard_task_runner.py:52} INFO - Started process 902 to run task
+[2023-11-26 18:00:53,134] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'ingest_staging_db', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '152', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpcywgdr0i', '--error-file', '/tmp/tmp9nflz7b9']
+[2023-11-26 18:00:53,135] {standard_task_runner.py:80} INFO - Job 152: Subtask ingest_staging_db
+[2023-11-26 18:00:53,190] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:00:53,260] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=ingest_staging_db
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-26 18:00:53,684] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1706, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'finalproject.covid_jabar' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 3373, in _show_create_table
+    ).exec_driver_sql(st)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1580, in exec_driver_sql
+    future=True,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1491, in _exec_driver_sql
+    distilled_parameters,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1749, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1930, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1706, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.ProgrammingError: (MySQLdb._exceptions.ProgrammingError) (1146, "Table 'finalproject.covid_jabar' doesn't exist")
+[SQL: SHOW CREATE TABLE `covid_jabar`]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_data.py", line 35, in ingest_data_staging
+    df.to_sql("covid_jabar", staging_db_constring, if_exists="replace", index=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 2882, in to_sql
+    method=method,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1650, in prep_table
+    table.create()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 860, in create
+    self.pd_sql.drop_table(self.name, self.schema)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1809, in drop_table
+    self.meta.reflect(only=[table_name], schema=schema)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 4715, in reflect
+    Table(name, self, **reflect_opts)
+  File "<string>", line 2, in __new__
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/deprecations.py", line 298, in warned
+    return fn(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 600, in __new__
+    metadata._remove_table(name, schema)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 595, in __new__
+    table._init(name, metadata, *args, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 675, in _init
+    resolve_fks=resolve_fks,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 710, in _autoload
+    _extend_on=_extend_on,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/reflection.py", line 758, in reflect_table
+    table_name, schema, **table.dialect_kwargs
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/reflection.py", line 399, in get_table_options
+    conn, table_name, schema, info_cache=self.info_cache, **kw
+  File "<string>", line 2, in get_table_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/reflection.py", line 55, in cache
+    ret = fn(self, con, *args, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 2997, in get_table_options
+    connection, table_name, schema, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 3249, in _parsed_state_or_create
+    info_cache=kw.get("info_cache", None),
+  File "<string>", line 2, in _setup_parser
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/reflection.py", line 55, in cache
+    ret = fn(self, con, *args, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 3273, in _setup_parser
+    connection, None, charset, full_name=full_name
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 3376, in _show_create_table
+    util.raise_(exc.NoSuchTableError(full_name), replace_context=e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+sqlalchemy.exc.NoSuchTableError: `covid_jabar`
+[2023-11-26 18:00:53,700] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=data_covid_etl, task_id=ingest_staging_db, execution_date=20231120T000000, start_date=20231126T180053, end_date=20231126T180053
+[2023-11-26 18:00:53,718] {standard_task_runner.py:97} ERROR - Failed to execute job 152 for task ingest_staging_db (`covid_jabar`; 902)
+[2023-11-26 18:00:53,753] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-11-26 18:00:53,794] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:02:40,605] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 18:02:40,620] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 18:02:40,620] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:02:40,620] {taskinstance.py:1357} INFO - Starting attempt 1 of 4
+[2023-11-26 18:02:40,620] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:02:40,638] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): ingest_staging_db> on 2023-11-20 00:00:00+00:00
+[2023-11-26 18:02:40,644] {standard_task_runner.py:52} INFO - Started process 1009 to run task
+[2023-11-26 18:02:40,649] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'ingest_staging_db', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '170', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpmt8yrpt9', '--error-file', '/tmp/tmp1rgipjc2']
+[2023-11-26 18:02:40,650] {standard_task_runner.py:80} INFO - Job 170: Subtask ingest_staging_db
+[2023-11-26 18:02:40,717] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:02:40,796] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=ingest_staging_db
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-26 18:02:41,354] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 18:02:41,420] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=ingest_staging_db, execution_date=20231120T000000, start_date=20231126T180240, end_date=20231126T180241
+[2023-11-26 18:02:41,466] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:02:41,527] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:05:33,745] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 18:05:33,753] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 18:05:33,754] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:05:33,754] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-26 18:05:33,754] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:05:33,767] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): ingest_staging_db> on 2023-11-20 00:00:00+00:00
+[2023-11-26 18:05:33,771] {standard_task_runner.py:52} INFO - Started process 1137 to run task
+[2023-11-26 18:05:33,774] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'ingest_staging_db', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '188', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpu37z0cer', '--error-file', '/tmp/tmpqro3j634']
+[2023-11-26 18:05:33,775] {standard_task_runner.py:80} INFO - Job 188: Subtask ingest_staging_db
+[2023-11-26 18:05:33,822] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:05:33,893] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=ingest_staging_db
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-26 18:05:34,378] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 18:05:34,503] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=ingest_staging_db, execution_date=20231120T000000, start_date=20231126T180533, end_date=20231126T180534
+[2023-11-26 18:05:34,552] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:05:34,619] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:08:47,171] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 18:08:47,192] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 18:08:47,192] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:08:47,192] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-26 18:08:47,193] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:08:47,211] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): ingest_staging_db> on 2023-11-20 00:00:00+00:00
+[2023-11-26 18:08:47,217] {standard_task_runner.py:52} INFO - Started process 1330 to run task
+[2023-11-26 18:08:47,220] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'ingest_staging_db', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '221', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpw87yngf6', '--error-file', '/tmp/tmp3_7jqzyi']
+[2023-11-26 18:08:47,221] {standard_task_runner.py:80} INFO - Job 221: Subtask ingest_staging_db
+[2023-11-26 18:08:47,298] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:08:47,377] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=ingest_staging_db
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-26 18:08:47,815] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1706, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'finalproject.covid_jabar' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 3373, in _show_create_table
+    ).exec_driver_sql(st)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1580, in exec_driver_sql
+    future=True,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1491, in _exec_driver_sql
+    distilled_parameters,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1749, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1930, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1706, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.ProgrammingError: (MySQLdb._exceptions.ProgrammingError) (1146, "Table 'finalproject.covid_jabar' doesn't exist")
+[SQL: SHOW CREATE TABLE `covid_jabar`]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_data.py", line 35, in ingest_data_staging
+    df.to_sql("covid_jabar", staging_db_constring, if_exists="replace", index=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 2882, in to_sql
+    method=method,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1650, in prep_table
+    table.create()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 860, in create
+    self.pd_sql.drop_table(self.name, self.schema)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1809, in drop_table
+    self.meta.reflect(only=[table_name], schema=schema)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 4715, in reflect
+    Table(name, self, **reflect_opts)
+  File "<string>", line 2, in __new__
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/deprecations.py", line 298, in warned
+    return fn(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 600, in __new__
+    metadata._remove_table(name, schema)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 595, in __new__
+    table._init(name, metadata, *args, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 675, in _init
+    resolve_fks=resolve_fks,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 710, in _autoload
+    _extend_on=_extend_on,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/reflection.py", line 758, in reflect_table
+    table_name, schema, **table.dialect_kwargs
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/reflection.py", line 399, in get_table_options
+    conn, table_name, schema, info_cache=self.info_cache, **kw
+  File "<string>", line 2, in get_table_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/reflection.py", line 55, in cache
+    ret = fn(self, con, *args, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 2997, in get_table_options
+    connection, table_name, schema, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 3249, in _parsed_state_or_create
+    info_cache=kw.get("info_cache", None),
+  File "<string>", line 2, in _setup_parser
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/reflection.py", line 55, in cache
+    ret = fn(self, con, *args, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 3273, in _setup_parser
+    connection, None, charset, full_name=full_name
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 3376, in _show_create_table
+    util.raise_(exc.NoSuchTableError(full_name), replace_context=e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+sqlalchemy.exc.NoSuchTableError: `covid_jabar`
+[2023-11-26 18:08:47,832] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=data_covid_etl, task_id=ingest_staging_db, execution_date=20231120T000000, start_date=20231126T180847, end_date=20231126T180847
+[2023-11-26 18:08:47,855] {standard_task_runner.py:97} ERROR - Failed to execute job 221 for task ingest_staging_db (`covid_jabar`; 1330)
+[2023-11-26 18:08:47,882] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-11-26 18:08:47,933] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:15:24,242] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 18:15:24,258] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-26 18:15:24,259] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:15:24,259] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-26 18:15:24,259] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:15:24,289] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): ingest_staging_db> on 2023-11-20 00:00:00+00:00
+[2023-11-26 18:15:24,294] {standard_task_runner.py:52} INFO - Started process 1628 to run task
+[2023-11-26 18:15:24,316] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'ingest_staging_db', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '259', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmp_gv84zic', '--error-file', '/tmp/tmppja6dn1b']
+[2023-11-26 18:15:24,317] {standard_task_runner.py:80} INFO - Job 259: Subtask ingest_staging_db
+[2023-11-26 18:15:24,398] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-20T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:15:24,517] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=ingest_staging_db
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-26 18:15:25,081] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1706, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'finalproject.covid_jabar' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 3373, in _show_create_table
+    ).exec_driver_sql(st)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1580, in exec_driver_sql
+    future=True,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1491, in _exec_driver_sql
+    distilled_parameters,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1749, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1930, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1706, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.ProgrammingError: (MySQLdb._exceptions.ProgrammingError) (1146, "Table 'finalproject.covid_jabar' doesn't exist")
+[SQL: SHOW CREATE TABLE `covid_jabar`]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_data.py", line 35, in ingest_data_staging
+    df.to_sql("covid_jabar", staging_db_constring, if_exists="replace", index=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 2882, in to_sql
+    method=method,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1650, in prep_table
+    table.create()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 860, in create
+    self.pd_sql.drop_table(self.name, self.schema)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 1809, in drop_table
+    self.meta.reflect(only=[table_name], schema=schema)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 4715, in reflect
+    Table(name, self, **reflect_opts)
+  File "<string>", line 2, in __new__
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/deprecations.py", line 298, in warned
+    return fn(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 600, in __new__
+    metadata._remove_table(name, schema)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 595, in __new__
+    table._init(name, metadata, *args, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 675, in _init
+    resolve_fks=resolve_fks,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/schema.py", line 710, in _autoload
+    _extend_on=_extend_on,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/reflection.py", line 758, in reflect_table
+    table_name, schema, **table.dialect_kwargs
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/reflection.py", line 399, in get_table_options
+    conn, table_name, schema, info_cache=self.info_cache, **kw
+  File "<string>", line 2, in get_table_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/reflection.py", line 55, in cache
+    ret = fn(self, con, *args, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 2997, in get_table_options
+    connection, table_name, schema, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 3249, in _parsed_state_or_create
+    info_cache=kw.get("info_cache", None),
+  File "<string>", line 2, in _setup_parser
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/reflection.py", line 55, in cache
+    ret = fn(self, con, *args, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 3273, in _setup_parser
+    connection, None, charset, full_name=full_name
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/base.py", line 3376, in _show_create_table
+    util.raise_(exc.NoSuchTableError(full_name), replace_context=e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+sqlalchemy.exc.NoSuchTableError: `covid_jabar`
+[2023-11-26 18:15:25,098] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=data_covid_etl, task_id=ingest_staging_db, execution_date=20231120T000000, start_date=20231126T181524, end_date=20231126T181525
+[2023-11-26 18:15:25,120] {standard_task_runner.py:97} ERROR - Failed to execute job 259 for task ingest_staging_db (`covid_jabar`; 1628)
+[2023-11-26 18:15:25,157] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-11-26 18:15:25,255] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,240 @@
+[2023-11-26 15:39:33,844] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-26 15:39:33,910] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-26 15:39:33,910] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 15:39:33,910] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-11-26 15:39:33,910] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 15:39:34,009] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_dim_district> on 2023-11-21 00:00:00+00:00
+[2023-11-26 15:39:34,020] {standard_task_runner.py:52} INFO - Started process 2486 to run task
+[2023-11-26 15:39:34,051] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'create_dim_district', 'scheduled__2023-11-21T00:00:00+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmp32nex81t', '--error-file', '/tmp/tmps8ffno2p']
+[2023-11-26 15:39:34,051] {standard_task_runner.py:80} INFO - Job 39: Subtask create_dim_district
+[2023-11-26 15:39:34,353] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [running]> on host f384f2afcc4f
+[2023-11-26 15:39:34,691] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_dim_district
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-21T00:00:00+00:00
+[2023-11-26 15:39:34,692] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 15:39:34,747] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=create_dim_district, execution_date=20231121T000000, start_date=20231126T153933, end_date=20231126T153934
+[2023-11-26 15:39:34,845] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 15:39:35,185] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 17:57:09,450] {taskinstance.py:1153} INFO - Dependencies not met for <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [queued]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'total': 1, 'successes': 0, 'skipped': 0, 'failed': 0, 'upstream_failed': 0, 'done': 0}, upstream_task_ids={'create_dim_province'}
+[2023-11-26 17:57:09,455] {local_task_job.py:101} INFO - Task is not able to be run
+[2023-11-26 18:06:10,574] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-26 18:06:10,584] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-26 18:06:10,584] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:06:10,584] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-26 18:06:10,584] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:06:10,600] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_dim_district> on 2023-11-21 00:00:00+00:00
+[2023-11-26 18:06:10,605] {standard_task_runner.py:52} INFO - Started process 1203 to run task
+[2023-11-26 18:06:10,609] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'create_dim_district', 'scheduled__2023-11-21T00:00:00+00:00', '--job-id', '206', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpsrquzebe', '--error-file', '/tmp/tmp3kgyedjx']
+[2023-11-26 18:06:10,609] {standard_task_runner.py:80} INFO - Job 206: Subtask create_dim_district
+[2023-11-26 18:06:10,660] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:06:10,725] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_dim_district
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-21T00:00:00+00:00
+[2023-11-26 18:06:10,726] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 18:06:10,738] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=create_dim_district, execution_date=20231121T000000, start_date=20231126T180610, end_date=20231126T180610
+[2023-11-26 18:06:10,779] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:06:10,838] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:13:51,546] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-26 18:13:51,556] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-26 18:13:51,556] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:13:51,556] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-26 18:13:51,556] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:13:51,573] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_dim_district> on 2023-11-21 00:00:00+00:00
+[2023-11-26 18:13:51,578] {standard_task_runner.py:52} INFO - Started process 1522 to run task
+[2023-11-26 18:13:51,584] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'create_dim_district', 'scheduled__2023-11-21T00:00:00+00:00', '--job-id', '242', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpf1nt69ol', '--error-file', '/tmp/tmppeulese5']
+[2023-11-26 18:13:51,585] {standard_task_runner.py:80} INFO - Job 242: Subtask create_dim_district
+[2023-11-26 18:13:51,640] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:13:51,707] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_dim_district
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-21T00:00:00+00:00
+[2023-11-26 18:13:51,708] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 18:13:51,719] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=create_dim_district, execution_date=20231121T000000, start_date=20231126T181351, end_date=20231126T181351
+[2023-11-26 18:13:51,755] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:13:51,794] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:15:27,945] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-26 18:15:27,953] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-26 18:15:27,954] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:15:27,954] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-26 18:15:27,954] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:15:27,970] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_dim_district> on 2023-11-21 00:00:00+00:00
+[2023-11-26 18:15:27,976] {standard_task_runner.py:52} INFO - Started process 1643 to run task
+[2023-11-26 18:15:27,978] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'create_dim_district', 'scheduled__2023-11-21T00:00:00+00:00', '--job-id', '268', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmp0_gx3_go', '--error-file', '/tmp/tmpcrtra4ab']
+[2023-11-26 18:15:27,978] {standard_task_runner.py:80} INFO - Job 268: Subtask create_dim_district
+[2023-11-26 18:15:28,030] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.create_dim_district scheduled__2023-11-21T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:15:28,099] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_dim_district
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-21T00:00:00+00:00
+[2023-11-26 18:15:28,124] {logging_mixin.py:115} INFO - district_id province_id           district_name
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+[2023-11-26 18:15:28,125] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 18:15:28,140] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=create_dim_district, execution_date=20231121T000000, start_date=20231126T181527, end_date=20231126T181528
+[2023-11-26 18:15:28,191] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:15:28,256] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

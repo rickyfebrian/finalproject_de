@@ -1,0 +1,51 @@
+[2023-11-27 09:13:55,070] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: final_project_data_covid_etl.create_dim_district manual__2023-11-27T09:13:48.667181+00:00 [queued]>
+[2023-11-27 09:13:55,081] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: final_project_data_covid_etl.create_dim_district manual__2023-11-27T09:13:48.667181+00:00 [queued]>
+[2023-11-27 09:13:55,081] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-27 09:13:55,081] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-27 09:13:55,081] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-27 09:13:55,097] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_dim_district> on 2023-11-27 09:13:48.667181+00:00
+[2023-11-27 09:13:55,102] {standard_task_runner.py:52} INFO - Started process 253 to run task
+[2023-11-27 09:13:55,106] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'final_project_data_covid_etl', 'create_dim_district', 'manual__2023-11-27T09:13:48.667181+00:00', '--job-id', '363', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmp_niqobp6', '--error-file', '/tmp/tmp79jd2ide']
+[2023-11-27 09:13:55,107] {standard_task_runner.py:80} INFO - Job 363: Subtask create_dim_district
+[2023-11-27 09:13:55,177] {task_command.py:369} INFO - Running <TaskInstance: final_project_data_covid_etl.create_dim_district manual__2023-11-27T09:13:48.667181+00:00 [running]> on host f38c0c12695c
+[2023-11-27 09:13:55,268] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=ricky
+AIRFLOW_CTX_DAG_ID=final_project_data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_dim_district
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-27T09:13:48.667181+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-27T09:13:48.667181+00:00
+[2023-11-27 09:13:55,290] {logging_mixin.py:115} INFO - district_id province_id           district_name
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+[2023-11-27 09:13:55,371] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-27 09:13:55,387] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=final_project_data_covid_etl, task_id=create_dim_district, execution_date=20231127T091348, start_date=20231127T091355, end_date=20231127T091355
+[2023-11-27 09:13:55,437] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-27 09:13:55,509] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

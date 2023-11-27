@@ -1,0 +1,23 @@
+[2023-11-27 09:26:07,262] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: final_project_data_covid_etl.create_fact_province_daily manual__2023-11-27T09:22:18.570735+00:00 [queued]>
+[2023-11-27 09:26:07,271] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: final_project_data_covid_etl.create_fact_province_daily manual__2023-11-27T09:22:18.570735+00:00 [queued]>
+[2023-11-27 09:26:07,271] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-27 09:26:07,271] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-27 09:26:07,271] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-27 09:26:07,288] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_fact_province_daily> on 2023-11-27 09:22:18.570735+00:00
+[2023-11-27 09:26:07,294] {standard_task_runner.py:52} INFO - Started process 618 to run task
+[2023-11-27 09:26:07,297] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'final_project_data_covid_etl', 'create_fact_province_daily', 'manual__2023-11-27T09:22:18.570735+00:00', '--job-id', '384', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmp8_uxdmbc', '--error-file', '/tmp/tmpie7zeuhg']
+[2023-11-27 09:26:07,298] {standard_task_runner.py:80} INFO - Job 384: Subtask create_fact_province_daily
+[2023-11-27 09:26:07,354] {task_command.py:369} INFO - Running <TaskInstance: final_project_data_covid_etl.create_fact_province_daily manual__2023-11-27T09:22:18.570735+00:00 [running]> on host f38c0c12695c
+[2023-11-27 09:26:07,422] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=ricky
+AIRFLOW_CTX_DAG_ID=final_project_data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_fact_province_daily
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-27T09:22:18.570735+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-27T09:22:18.570735+00:00
+[2023-11-27 09:26:07,422] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-27 09:26:07,434] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=final_project_data_covid_etl, task_id=create_fact_province_daily, execution_date=20231127T092218, start_date=20231127T092607, end_date=20231127T092607
+[2023-11-27 09:26:07,468] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-27 09:26:07,499] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

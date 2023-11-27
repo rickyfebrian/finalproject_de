@@ -1,0 +1,49 @@
+[2023-11-27 14:58:58,582] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: final_project_data_covid_etl.create_fact_district_daily scheduled__2023-11-26T00:00:00+00:00 [queued]>
+[2023-11-27 14:58:58,592] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: final_project_data_covid_etl.create_fact_district_daily scheduled__2023-11-26T00:00:00+00:00 [queued]>
+[2023-11-27 14:58:58,592] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-27 14:58:58,592] {taskinstance.py:1357} INFO - Starting attempt 10 of 12
+[2023-11-27 14:58:58,592] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-27 14:58:58,607] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_fact_district_daily> on 2023-11-26 00:00:00+00:00
+[2023-11-27 14:58:58,611] {standard_task_runner.py:52} INFO - Started process 1812 to run task
+[2023-11-27 14:58:58,614] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'final_project_data_covid_etl', 'create_fact_district_daily', 'scheduled__2023-11-26T00:00:00+00:00', '--job-id', '479', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmptogvxy1i', '--error-file', '/tmp/tmpqx25jzdw']
+[2023-11-27 14:58:58,615] {standard_task_runner.py:80} INFO - Job 479: Subtask create_fact_district_daily
+[2023-11-27 14:58:58,688] {task_command.py:369} INFO - Running <TaskInstance: final_project_data_covid_etl.create_fact_district_daily scheduled__2023-11-26T00:00:00+00:00 [running]> on host 9bd194bc0dbc
+[2023-11-27 14:58:58,764] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=ricky
+AIRFLOW_CTX_DAG_ID=final_project_data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_fact_district_daily
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-26T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=10
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-26T00:00:00+00:00
+[2023-11-27 14:58:58,807] {logging_mixin.py:115} INFO -    CLOSECONTACT  CONFIRMATION  ...  suspect_meninggal     tanggal
+0           274             0  ...                  0  2020-08-05
+1           534             0  ...                  0  2020-08-05
+2          2127             0  ...                  0  2020-08-05
+3             0             0  ...                  0  2020-08-05
+4          1295             0  ...                  0  2020-08-05
+
+[5 rows x 20 columns]
+[2023-11-27 14:58:58,858] {logging_mixin.py:115} INFO -    id   status_name status_detail                    status
+0   1  closecontact   dikarantina  closecontact_dikarantina
+1   2  closecontact   dikarantina  closecontact_dikarantina
+2   3  closecontact   dikarantina  closecontact_dikarantina
+3   4  closecontact   dikarantina  closecontact_dikarantina
+4   5  closecontact   dikarantina  closecontact_dikarantina
+[2023-11-27 14:58:58,863] {logging_mixin.py:115} INFO -                       status  count
+0   closecontact_dikarantina    145
+1     closecontact_discarded    145
+2     closecontact_meninggal    145
+3     confirmation_meninggal    145
+4        confirmation_sembuh    145
+5         probable_diisolasi    145
+6         probable_discarded    145
+7         probable_meninggal    145
+8          suspect_diisolasi    145
+9          suspect_discarded    145
+10         suspect_meninggal    145
+[2023-11-27 14:58:58,863] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-27 14:58:58,875] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=final_project_data_covid_etl, task_id=create_fact_district_daily, execution_date=20231126T000000, start_date=20231127T145858, end_date=20231127T145858
+[2023-11-27 14:58:58,906] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-27 14:58:58,950] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

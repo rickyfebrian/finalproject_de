@@ -1,0 +1,169 @@
+[2023-11-26 18:10:52,822] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_dim_province scheduled__2023-11-24T00:00:00+00:00 [queued]>
+[2023-11-26 18:10:52,832] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_dim_province scheduled__2023-11-24T00:00:00+00:00 [queued]>
+[2023-11-26 18:10:52,832] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:10:52,832] {taskinstance.py:1357} INFO - Starting attempt 3 of 5
+[2023-11-26 18:10:52,832] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:10:52,847] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_dim_province> on 2023-11-24 00:00:00+00:00
+[2023-11-26 18:10:52,852] {standard_task_runner.py:52} INFO - Started process 1408 to run task
+[2023-11-26 18:10:52,856] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'create_dim_province', 'scheduled__2023-11-24T00:00:00+00:00', '--job-id', '228', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpqebofl_p', '--error-file', '/tmp/tmpiv1k2jwa']
+[2023-11-26 18:10:52,857] {standard_task_runner.py:80} INFO - Job 228: Subtask create_dim_province
+[2023-11-26 18:10:52,923] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.create_dim_province scheduled__2023-11-24T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:10:53,004] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_dim_province
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-24T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-24T00:00:00+00:00
+[2023-11-26 18:10:53,032] {logging_mixin.py:115} INFO - province_id province_name
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+         32    Jawa Barat
+[2023-11-26 18:10:53,110] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 18:10:53,125] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=create_dim_province, execution_date=20231124T000000, start_date=20231126T181052, end_date=20231126T181053
+[2023-11-26 18:10:53,147] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:10:53,205] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

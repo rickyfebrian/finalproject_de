@@ -1,0 +1,48 @@
+[2023-11-26 15:39:36,836] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_fact_district_daily scheduled__2023-11-22T00:00:00+00:00 [queued]>
+[2023-11-26 15:39:36,905] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_fact_district_daily scheduled__2023-11-22T00:00:00+00:00 [queued]>
+[2023-11-26 15:39:36,906] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 15:39:36,906] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-11-26 15:39:36,906] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 15:39:36,978] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_fact_district_daily> on 2023-11-22 00:00:00+00:00
+[2023-11-26 15:39:36,998] {standard_task_runner.py:52} INFO - Started process 2532 to run task
+[2023-11-26 15:39:37,020] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'create_fact_district_daily', 'scheduled__2023-11-22T00:00:00+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpnjgbfcn0', '--error-file', '/tmp/tmpco1ls9fg']
+[2023-11-26 15:39:37,023] {standard_task_runner.py:80} INFO - Job 46: Subtask create_fact_district_daily
+[2023-11-26 15:39:37,213] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.create_fact_district_daily scheduled__2023-11-22T00:00:00+00:00 [running]> on host f384f2afcc4f
+[2023-11-26 15:39:37,455] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_fact_district_daily
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-22T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-22T00:00:00+00:00
+[2023-11-26 15:39:37,456] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 15:39:37,559] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=create_fact_district_daily, execution_date=20231122T000000, start_date=20231126T153936, end_date=20231126T153937
+[2023-11-26 15:39:37,595] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 15:39:37,738] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 17:57:12,873] {taskinstance.py:1153} INFO - Dependencies not met for <TaskInstance: data_covid_etl.create_fact_district_daily scheduled__2023-11-22T00:00:00+00:00 [queued]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'total': 1, 'successes': 0, 'skipped': 0, 'failed': 0, 'upstream_failed': 0, 'done': 0}, upstream_task_ids={'create_dim_case'}
+[2023-11-26 17:57:12,882] {local_task_job.py:101} INFO - Task is not able to be run
+[2023-11-26 18:16:28,188] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_fact_district_daily scheduled__2023-11-22T00:00:00+00:00 [queued]>
+[2023-11-26 18:16:28,199] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.create_fact_district_daily scheduled__2023-11-22T00:00:00+00:00 [queued]>
+[2023-11-26 18:16:28,200] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:16:28,200] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-26 18:16:28,200] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:16:28,217] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_fact_district_daily> on 2023-11-22 00:00:00+00:00
+[2023-11-26 18:16:28,222] {standard_task_runner.py:52} INFO - Started process 1694 to run task
+[2023-11-26 18:16:28,224] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'create_fact_district_daily', 'scheduled__2023-11-22T00:00:00+00:00', '--job-id', '275', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpd69a2o2a', '--error-file', '/tmp/tmpzfghir8j']
+[2023-11-26 18:16:28,225] {standard_task_runner.py:80} INFO - Job 275: Subtask create_fact_district_daily
+[2023-11-26 18:16:28,275] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.create_fact_district_daily scheduled__2023-11-22T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:16:28,347] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_fact_district_daily
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-22T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-22T00:00:00+00:00
+[2023-11-26 18:16:28,348] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 18:16:28,359] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=create_fact_district_daily, execution_date=20231122T000000, start_date=20231126T181628, end_date=20231126T181628
+[2023-11-26 18:16:28,398] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:16:28,436] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

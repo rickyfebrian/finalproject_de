@@ -1,0 +1,338 @@
+[2023-11-26 18:26:36,100] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: final_project_data_covid_etl.create_dim_district scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 18:26:36,108] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: final_project_data_covid_etl.create_dim_district scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 18:26:36,108] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:26:36,108] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-26 18:26:36,108] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:26:36,121] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_dim_district> on 2023-11-25 00:00:00+00:00
+[2023-11-26 18:26:36,126] {standard_task_runner.py:52} INFO - Started process 2068 to run task
+[2023-11-26 18:26:36,129] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'final_project_data_covid_etl', 'create_dim_district', 'scheduled__2023-11-25T00:00:00+00:00', '--job-id', '314', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmp74rs3br1', '--error-file', '/tmp/tmpcxiwhv3v']
+[2023-11-26 18:26:36,130] {standard_task_runner.py:80} INFO - Job 314: Subtask create_dim_district
+[2023-11-26 18:26:36,190] {task_command.py:369} INFO - Running <TaskInstance: final_project_data_covid_etl.create_dim_district scheduled__2023-11-25T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:26:36,258] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=ricky
+AIRFLOW_CTX_DAG_ID=final_project_data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_dim_district
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-25T00:00:00+00:00
+[2023-11-26 18:26:36,290] {logging_mixin.py:115} INFO - district_id province_id           district_name
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+[2023-11-26 18:26:36,346] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 18:26:36,360] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=final_project_data_covid_etl, task_id=create_dim_district, execution_date=20231125T000000, start_date=20231126T182636, end_date=20231126T182636
+[2023-11-26 18:26:36,381] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:26:36,435] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-27 07:13:22,646] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: final_project_data_covid_etl.create_dim_district scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-27 07:13:22,663] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: final_project_data_covid_etl.create_dim_district scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-27 07:13:22,663] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-27 07:13:22,663] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-27 07:13:22,663] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-27 07:13:22,700] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): create_dim_district> on 2023-11-25 00:00:00+00:00
+[2023-11-27 07:13:22,704] {standard_task_runner.py:52} INFO - Started process 215 to run task
+[2023-11-27 07:13:22,707] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'final_project_data_covid_etl', 'create_dim_district', 'scheduled__2023-11-25T00:00:00+00:00', '--job-id', '333', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpmzowne52', '--error-file', '/tmp/tmpf2u67eme']
+[2023-11-27 07:13:22,707] {standard_task_runner.py:80} INFO - Job 333: Subtask create_dim_district
+[2023-11-27 07:13:22,782] {task_command.py:369} INFO - Running <TaskInstance: final_project_data_covid_etl.create_dim_district scheduled__2023-11-25T00:00:00+00:00 [running]> on host 671693f20ed3
+[2023-11-27 07:13:22,873] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=ricky
+AIRFLOW_CTX_DAG_ID=final_project_data_covid_etl
+AIRFLOW_CTX_TASK_ID=create_dim_district
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-25T00:00:00+00:00
+[2023-11-27 07:13:22,905] {logging_mixin.py:115} INFO - district_id province_id           district_name
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+       3208          32      Kabupaten Kuningan
+       3210          32    Kabupaten Majalengka
+       3218          32   Kabupaten Pangandaran
+       3214          32    Kabupaten Purwakarta
+       3213          32        Kabupaten Subang
+       3202          32      Kabupaten Sukabumi
+       3211          32      Kabupaten Sumedang
+       3206          32   Kabupaten Tasikmalaya
+       3273          32            Kota Bandung
+       3279          32             Kota Banjar
+       3275          32             Kota Bekasi
+       3271          32              Kota Bogor
+       3277          32             Kota Cimahi
+       3274          32            Kota Cirebon
+       3276          32              Kota Depok
+       3272          32           Kota Sukabumi
+       3278          32        Kota Tasikmalaya
+       3204          32       Kabupaten Bandung
+       3217          32 Kabupaten Bandung Barat
+       3216          32        Kabupaten Bekasi
+       3201          32         Kabupaten Bogor
+       3207          32        Kabupaten Ciamis
+       3203          32       Kabupaten Cianjur
+       3209          32       Kabupaten Cirebon
+       3205          32         Kabupaten Garut
+       3212          32     Kabupaten Indramayu
+       3215          32      Kabupaten Karawang
+[2023-11-27 07:13:22,974] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-27 07:13:22,987] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=final_project_data_covid_etl, task_id=create_dim_district, execution_date=20231125T000000, start_date=20231127T071322, end_date=20231127T071322
+[2023-11-27 07:13:23,009] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-27 07:13:23,069] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

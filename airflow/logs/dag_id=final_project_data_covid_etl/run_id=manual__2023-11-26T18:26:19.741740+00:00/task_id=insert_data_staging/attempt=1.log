@@ -1,0 +1,23 @@
+[2023-11-26 18:26:21,549] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: final_project_data_covid_etl.insert_data_staging manual__2023-11-26T18:26:19.741740+00:00 [queued]>
+[2023-11-26 18:26:21,558] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: final_project_data_covid_etl.insert_data_staging manual__2023-11-26T18:26:19.741740+00:00 [queued]>
+[2023-11-26 18:26:21,558] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:26:21,558] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-26 18:26:21,558] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:26:21,573] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): insert_data_staging> on 2023-11-26 18:26:19.741740+00:00
+[2023-11-26 18:26:21,577] {standard_task_runner.py:52} INFO - Started process 2037 to run task
+[2023-11-26 18:26:21,581] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'final_project_data_covid_etl', 'insert_data_staging', 'manual__2023-11-26T18:26:19.741740+00:00', '--job-id', '305', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpcro6rlky', '--error-file', '/tmp/tmp1h2fcadq']
+[2023-11-26 18:26:21,582] {standard_task_runner.py:80} INFO - Job 305: Subtask insert_data_staging
+[2023-11-26 18:26:21,647] {task_command.py:369} INFO - Running <TaskInstance: final_project_data_covid_etl.insert_data_staging manual__2023-11-26T18:26:19.741740+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:26:21,713] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=ricky
+AIRFLOW_CTX_DAG_ID=final_project_data_covid_etl
+AIRFLOW_CTX_TASK_ID=insert_data_staging
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-26T18:26:19.741740+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-26T18:26:19.741740+00:00
+[2023-11-26 18:26:22,236] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 18:26:22,254] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=final_project_data_covid_etl, task_id=insert_data_staging, execution_date=20231126T182619, start_date=20231126T182621, end_date=20231126T182622
+[2023-11-26 18:26:22,314] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:26:22,364] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

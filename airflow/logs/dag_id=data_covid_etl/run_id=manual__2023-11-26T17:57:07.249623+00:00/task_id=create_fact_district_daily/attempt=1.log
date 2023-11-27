@@ -1,0 +1,2 @@
+[2023-11-26 17:57:09,185] {taskinstance.py:1153} INFO - Dependencies not met for <TaskInstance: data_covid_etl.create_fact_district_daily manual__2023-11-26T17:57:07.249623+00:00 [queued]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'total': 1, 'successes': 0, 'skipped': 0, 'failed': 0, 'upstream_failed': 0, 'done': 0}, upstream_task_ids={'create_dim_case'}
+[2023-11-26 17:57:09,191] {local_task_job.py:101} INFO - Task is not able to be run

@@ -1,0 +1,224 @@
+[2023-11-26 14:26:16,034] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 14:26:16,045] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 14:26:16,045] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 14:26:16,046] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-11-26 14:26:16,046] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 14:26:16,062] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): print_hello_world> on 2023-11-25 00:00:00+00:00
+[2023-11-26 14:26:16,070] {standard_task_runner.py:52} INFO - Started process 654 to run task
+[2023-11-26 14:26:16,076] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'print_hello_world', 'scheduled__2023-11-25T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpts5n4t1q', '--error-file', '/tmp/tmp1qcxj_0w']
+[2023-11-26 14:26:16,078] {standard_task_runner.py:80} INFO - Job 13: Subtask print_hello_world
+[2023-11-26 14:26:16,135] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [running]> on host f384f2afcc4f
+[2023-11-26 14:26:16,217] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=print_hello_world
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-25T00:00:00+00:00
+[2023-11-26 14:26:16,218] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-11-26 14:26:16,218] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "HelloWorld!"']
+[2023-11-26 14:26:16,229] {subprocess.py:85} INFO - Output:
+[2023-11-26 14:26:16,231] {subprocess.py:92} INFO - HelloWorld!
+[2023-11-26 14:26:16,231] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-11-26 14:26:16,267] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=print_hello_world, execution_date=20231125T000000, start_date=20231126T142616, end_date=20231126T142616
+[2023-11-26 14:26:16,286] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 14:26:16,321] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 15:39:36,524] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 15:39:36,549] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 15:39:36,550] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 15:39:36,550] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-11-26 15:39:36,550] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 15:39:36,582] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): print_hello_world> on 2023-11-25 00:00:00+00:00
+[2023-11-26 15:39:36,588] {standard_task_runner.py:52} INFO - Started process 2528 to run task
+[2023-11-26 15:39:36,611] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'print_hello_world', 'scheduled__2023-11-25T00:00:00+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmppnbutqfn', '--error-file', '/tmp/tmpipb60g6u']
+[2023-11-26 15:39:36,611] {standard_task_runner.py:80} INFO - Job 43: Subtask print_hello_world
+[2023-11-26 15:39:36,770] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [running]> on host f384f2afcc4f
+[2023-11-26 15:39:36,991] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=print_hello_world
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-25T00:00:00+00:00
+[2023-11-26 15:39:36,992] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-11-26 15:39:36,992] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "HelloWorld!"']
+[2023-11-26 15:39:37,021] {subprocess.py:85} INFO - Output:
+[2023-11-26 15:39:37,023] {subprocess.py:92} INFO - HelloWorld!
+[2023-11-26 15:39:37,023] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-11-26 15:39:37,241] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=print_hello_world, execution_date=20231125T000000, start_date=20231126T153936, end_date=20231126T153937
+[2023-11-26 15:39:37,301] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 15:39:37,417] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 17:57:11,881] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 17:57:11,912] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 17:57:11,912] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 17:57:11,913] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-11-26 17:57:11,913] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 17:57:11,952] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): print_hello_world> on 2023-11-25 00:00:00+00:00
+[2023-11-26 17:57:11,958] {standard_task_runner.py:52} INFO - Started process 695 to run task
+[2023-11-26 17:57:11,987] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'print_hello_world', 'scheduled__2023-11-25T00:00:00+00:00', '--job-id', '105', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpy_yt2bn5', '--error-file', '/tmp/tmpcoxoxfis']
+[2023-11-26 17:57:11,987] {standard_task_runner.py:80} INFO - Job 105: Subtask print_hello_world
+[2023-11-26 17:57:12,162] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 17:57:12,456] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=print_hello_world
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-25T00:00:00+00:00
+[2023-11-26 17:57:12,456] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-11-26 17:57:12,457] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "HelloWorld!"']
+[2023-11-26 17:57:12,507] {subprocess.py:85} INFO - Output:
+[2023-11-26 17:57:12,522] {subprocess.py:92} INFO - HelloWorld!
+[2023-11-26 17:57:12,524] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-11-26 17:57:12,591] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=print_hello_world, execution_date=20231125T000000, start_date=20231126T175711, end_date=20231126T175712
+[2023-11-26 17:57:12,643] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 17:57:12,749] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:00:53,033] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 18:00:53,042] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 18:00:53,042] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:00:53,042] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2023-11-26 18:00:53,042] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:00:53,058] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): print_hello_world> on 2023-11-25 00:00:00+00:00
+[2023-11-26 18:00:53,065] {standard_task_runner.py:52} INFO - Started process 901 to run task
+[2023-11-26 18:00:53,069] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'print_hello_world', 'scheduled__2023-11-25T00:00:00+00:00', '--job-id', '151', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmp8kobjt0a', '--error-file', '/tmp/tmppadwlnlh']
+[2023-11-26 18:00:53,069] {standard_task_runner.py:80} INFO - Job 151: Subtask print_hello_world
+[2023-11-26 18:00:53,123] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:00:53,201] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=print_hello_world
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-25T00:00:00+00:00
+[2023-11-26 18:00:53,202] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-11-26 18:00:53,202] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "HelloWorld!"']
+[2023-11-26 18:00:53,222] {subprocess.py:85} INFO - Output:
+[2023-11-26 18:00:53,224] {subprocess.py:92} INFO - HelloWorld!
+[2023-11-26 18:00:53,224] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-11-26 18:00:53,254] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=print_hello_world, execution_date=20231125T000000, start_date=20231126T180053, end_date=20231126T180053
+[2023-11-26 18:00:53,283] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:00:53,324] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:02:40,296] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 18:02:40,309] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 18:02:40,310] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:02:40,310] {taskinstance.py:1357} INFO - Starting attempt 1 of 4
+[2023-11-26 18:02:40,310] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:02:40,351] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): print_hello_world> on 2023-11-25 00:00:00+00:00
+[2023-11-26 18:02:40,357] {standard_task_runner.py:52} INFO - Started process 1005 to run task
+[2023-11-26 18:02:40,365] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'print_hello_world', 'scheduled__2023-11-25T00:00:00+00:00', '--job-id', '169', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpt5u_d3oo', '--error-file', '/tmp/tmpv_8nb2tm']
+[2023-11-26 18:02:40,371] {standard_task_runner.py:80} INFO - Job 169: Subtask print_hello_world
+[2023-11-26 18:02:40,450] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:02:40,548] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=print_hello_world
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-25T00:00:00+00:00
+[2023-11-26 18:02:40,550] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-11-26 18:02:40,551] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "HelloWorld!"']
+[2023-11-26 18:02:40,560] {subprocess.py:85} INFO - Output:
+[2023-11-26 18:02:40,561] {subprocess.py:92} INFO - HelloWorld!
+[2023-11-26 18:02:40,562] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-11-26 18:02:40,599] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=print_hello_world, execution_date=20231125T000000, start_date=20231126T180240, end_date=20231126T180240
+[2023-11-26 18:02:40,618] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:02:40,663] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:05:33,489] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 18:05:33,500] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 18:05:33,500] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:05:33,500] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-26 18:05:33,500] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:05:33,519] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): print_hello_world> on 2023-11-25 00:00:00+00:00
+[2023-11-26 18:05:33,525] {standard_task_runner.py:52} INFO - Started process 1133 to run task
+[2023-11-26 18:05:33,537] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'print_hello_world', 'scheduled__2023-11-25T00:00:00+00:00', '--job-id', '186', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpzut1t4g0', '--error-file', '/tmp/tmp4hv6ddfh']
+[2023-11-26 18:05:33,538] {standard_task_runner.py:80} INFO - Job 186: Subtask print_hello_world
+[2023-11-26 18:05:33,619] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:05:33,724] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=print_hello_world
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-25T00:00:00+00:00
+[2023-11-26 18:05:33,725] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-11-26 18:05:33,725] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "HelloWorld!"']
+[2023-11-26 18:05:33,740] {subprocess.py:85} INFO - Output:
+[2023-11-26 18:05:33,741] {subprocess.py:92} INFO - HelloWorld!
+[2023-11-26 18:05:33,742] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-11-26 18:05:33,767] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=print_hello_world, execution_date=20231125T000000, start_date=20231126T180533, end_date=20231126T180533
+[2023-11-26 18:05:33,784] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:05:33,829] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:08:45,483] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 18:08:45,494] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 18:08:45,495] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:08:45,495] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-26 18:08:45,495] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:08:45,515] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): print_hello_world> on 2023-11-25 00:00:00+00:00
+[2023-11-26 18:08:45,521] {standard_task_runner.py:52} INFO - Started process 1305 to run task
+[2023-11-26 18:08:45,524] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'print_hello_world', 'scheduled__2023-11-25T00:00:00+00:00', '--job-id', '216', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpbvof6nl5', '--error-file', '/tmp/tmpyswi896b']
+[2023-11-26 18:08:45,524] {standard_task_runner.py:80} INFO - Job 216: Subtask print_hello_world
+[2023-11-26 18:08:45,573] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:08:45,639] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=print_hello_world
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-25T00:00:00+00:00
+[2023-11-26 18:08:45,639] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-11-26 18:08:45,640] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "HelloWorld!"']
+[2023-11-26 18:08:45,650] {subprocess.py:85} INFO - Output:
+[2023-11-26 18:08:45,651] {subprocess.py:92} INFO - HelloWorld!
+[2023-11-26 18:08:45,651] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-11-26 18:08:45,677] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=print_hello_world, execution_date=20231125T000000, start_date=20231126T180845, end_date=20231126T180845
+[2023-11-26 18:08:45,699] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:08:45,740] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:15:23,290] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 18:15:23,307] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [queued]>
+[2023-11-26 18:15:23,307] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:15:23,307] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2023-11-26 18:15:23,307] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:15:23,322] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): print_hello_world> on 2023-11-25 00:00:00+00:00
+[2023-11-26 18:15:23,327] {standard_task_runner.py:52} INFO - Started process 1611 to run task
+[2023-11-26 18:15:23,329] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'print_hello_world', 'scheduled__2023-11-25T00:00:00+00:00', '--job-id', '258', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmp537wji6g', '--error-file', '/tmp/tmpa71z6lfd']
+[2023-11-26 18:15:23,330] {standard_task_runner.py:80} INFO - Job 258: Subtask print_hello_world
+[2023-11-26 18:15:23,386] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.print_hello_world scheduled__2023-11-25T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:15:23,505] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=print_hello_world
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-25T00:00:00+00:00
+[2023-11-26 18:15:23,505] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-11-26 18:15:23,506] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "HelloWorld!"']
+[2023-11-26 18:15:23,531] {subprocess.py:85} INFO - Output:
+[2023-11-26 18:15:23,532] {subprocess.py:92} INFO - HelloWorld!
+[2023-11-26 18:15:23,532] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-11-26 18:15:23,613] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=print_hello_world, execution_date=20231125T000000, start_date=20231126T181523, end_date=20231126T181523
+[2023-11-26 18:15:23,662] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:15:23,908] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,46 @@
+[2023-11-26 15:44:59,380] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-23T00:00:00+00:00 [queued]>
+[2023-11-26 15:44:59,391] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-23T00:00:00+00:00 [queued]>
+[2023-11-26 15:44:59,391] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 15:44:59,391] {taskinstance.py:1357} INFO - Starting attempt 2 of 6
+[2023-11-26 15:44:59,391] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 15:44:59,408] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): ingest_staging_db> on 2023-11-23 00:00:00+00:00
+[2023-11-26 15:44:59,418] {standard_task_runner.py:52} INFO - Started process 2735 to run task
+[2023-11-26 15:44:59,421] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'ingest_staging_db', 'scheduled__2023-11-23T00:00:00+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmp1pluiuav', '--error-file', '/tmp/tmpd6zcmns3']
+[2023-11-26 15:44:59,421] {standard_task_runner.py:80} INFO - Job 75: Subtask ingest_staging_db
+[2023-11-26 15:44:59,485] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-23T00:00:00+00:00 [running]> on host f384f2afcc4f
+[2023-11-26 15:44:59,569] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=ingest_staging_db
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-23T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-23T00:00:00+00:00
+[2023-11-26 15:45:03,136] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 15:45:03,146] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=ingest_staging_db, execution_date=20231123T000000, start_date=20231126T154459, end_date=20231126T154503
+[2023-11-26 15:45:03,178] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 15:45:03,210] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-26 18:20:26,229] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-23T00:00:00+00:00 [queued]>
+[2023-11-26 18:20:26,247] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-23T00:00:00+00:00 [queued]>
+[2023-11-26 18:20:26,247] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:20:26,247] {taskinstance.py:1357} INFO - Starting attempt 2 of 3
+[2023-11-26 18:20:26,248] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-26 18:20:26,274] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): ingest_staging_db> on 2023-11-23 00:00:00+00:00
+[2023-11-26 18:20:26,281] {standard_task_runner.py:52} INFO - Started process 1808 to run task
+[2023-11-26 18:20:26,285] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_covid_etl', 'ingest_staging_db', 'scheduled__2023-11-23T00:00:00+00:00', '--job-id', '280', '--raw', '--subdir', 'DAGS_FOLDER/get_data.py', '--cfg-path', '/tmp/tmpb0_zskx4', '--error-file', '/tmp/tmpbcjgh_6b']
+[2023-11-26 18:20:26,285] {standard_task_runner.py:80} INFO - Job 280: Subtask ingest_staging_db
+[2023-11-26 18:20:26,352] {task_command.py:369} INFO - Running <TaskInstance: data_covid_etl.ingest_staging_db scheduled__2023-11-23T00:00:00+00:00 [running]> on host 79a606f4be36
+[2023-11-26 18:20:26,437] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=oce
+AIRFLOW_CTX_DAG_ID=data_covid_etl
+AIRFLOW_CTX_TASK_ID=ingest_staging_db
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-23T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-23T00:00:00+00:00
+[2023-11-26 18:20:26,978] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-26 18:20:26,992] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=data_covid_etl, task_id=ingest_staging_db, execution_date=20231123T000000, start_date=20231126T182026, end_date=20231126T182026
+[2023-11-26 18:20:27,021] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-26 18:20:27,067] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
