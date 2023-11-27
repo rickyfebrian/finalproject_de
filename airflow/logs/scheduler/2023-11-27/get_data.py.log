@@ -3007,3 +3007,13 @@ NameError: name 'closecontact_dikarantina' is not defined
 [2023-11-27 15:05:25,854] {logging_mixin.py:115} INFO - [2023-11-27 15:05:25,853] {dag.py:2371} INFO - Sync 1 DAGs
 [2023-11-27 15:05:25,873] {logging_mixin.py:115} INFO - [2023-11-27 15:05:25,873] {dag.py:2919} INFO - Setting next_dagrun for final_project_data_covid_etl to 2023-11-27T00:00:00+00:00, run_after=2023-11-28T00:00:00+00:00
 [2023-11-27 15:05:25,886] {processor.py:161} INFO - Processing /opt/airflow/dags/get_data.py took 0.321 seconds
+[2023-11-27 15:05:55,941] {processor.py:153} INFO - Started process (PID=1978) to work on /opt/airflow/dags/get_data.py
+[2023-11-27 15:05:55,942] {processor.py:641} INFO - Processing file /opt/airflow/dags/get_data.py for tasks to queue
+[2023-11-27 15:05:55,943] {logging_mixin.py:115} INFO - [2023-11-27 15:05:55,943] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/get_data.py
+[2023-11-27 15:05:56,211] {processor.py:651} INFO - DAG(s) dict_keys(['final_project_data_covid_etl']) retrieved from /opt/airflow/dags/get_data.py
+[2023-11-27 15:05:56,232] {logging_mixin.py:115} INFO - [2023-11-27 15:05:56,231] {dag.py:2371} INFO - Sync 1 DAGs
+[2023-11-27 15:05:56,249] {logging_mixin.py:115} INFO - [2023-11-27 15:05:56,249] {dag.py:2919} INFO - Setting next_dagrun for final_project_data_covid_etl to 2023-11-27T00:00:00+00:00, run_after=2023-11-28T00:00:00+00:00
+[2023-11-27 15:05:56,263] {processor.py:161} INFO - Processing /opt/airflow/dags/get_data.py took 0.324 seconds
+[2023-11-27 15:06:26,346] {processor.py:153} INFO - Started process (PID=1990) to work on /opt/airflow/dags/get_data.py
+[2023-11-27 15:06:26,347] {processor.py:641} INFO - Processing file /opt/airflow/dags/get_data.py for tasks to queue
+[2023-11-27 15:06:26,349] {logging_mixin.py:115} INFO - [2023-11-27 15:06:26,349] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/get_data.py

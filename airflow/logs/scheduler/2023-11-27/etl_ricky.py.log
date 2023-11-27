@@ -2039,3 +2039,8 @@ sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate
 [2023-11-27 15:05:50,629] {logging_mixin.py:115} INFO - [2023-11-27 15:05:50,629] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ricky.py
 [2023-11-27 15:05:50,892] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_ricky.py
 [2023-11-27 15:05:50,903] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_ricky.py took 0.280 seconds
+[2023-11-27 15:06:21,001] {processor.py:153} INFO - Started process (PID=1984) to work on /opt/airflow/dags/etl_ricky.py
+[2023-11-27 15:06:21,001] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_ricky.py for tasks to queue
+[2023-11-27 15:06:21,003] {logging_mixin.py:115} INFO - [2023-11-27 15:06:21,003] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/etl_ricky.py
+[2023-11-27 15:06:21,286] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_ricky.py
+[2023-11-27 15:06:21,300] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_ricky.py took 0.303 seconds
